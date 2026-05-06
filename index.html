@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="10K Rush - collect Monad and 10K items, dodge bombs." />
+  <title>10K Rush v1.7.0 Polished Surface Edition</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <section class="top">
+      <div>
+        <p class="eyebrow">10K Squad Arcade</p>
+        <div class="title-row">
+          <img src="assets/header-logo.png" alt="10K Squad logo" class="header-logo" />
+          <h1>Rush</h1>
+        </div>
+        <p class="subtitle">Move freely, collect items, dodge bombs and shoot with Space. Monad activates fire shots.</p>
+        <p class="version">VERSION v1.7.0 — polished surface edition</p>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span>Score</span>
+          <strong id="scoreValue">0</strong>
+        </div>
+        <div class="stat">
+          <span>Best</span>
+          <strong id="bestValue">0</strong>
+        </div>
+        <div class="stat">
+          <span>Lives</span>
+          <strong id="livesValue">3</strong>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-card">
+      <div class="toolbar">
+        <div id="statusText" class="status">10K Rush ready. Press Start.</div>
+        <div class="buttons">
+          <button id="startBtn" type="button">Start / Restart</button>
+          <button id="shareBtn" type="button">Share on X</button>
+        </div>
+      </div>
+
+      <div class="canvas-wrap">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+      </div>
+
+      <div class="help">
+        <div><strong>Desktop:</strong> WASD / arrows move, Space shoots</div>
+        <div><strong>Mobile:</strong> drag to move</div>
+        <div><strong>Power:</strong> Monad activates fire shots</div>
+      </div>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
